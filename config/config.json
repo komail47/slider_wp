@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "front-wp-1-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/frontWp1/FrontWp1WebPart.js",
+          "manifest": "./src/webparts/frontWp1/FrontWp1WebPart.manifest.json"
+        }
+      ]
+    },
+    "slik-01-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/slik01/Slik01WebPart.js",
+          "manifest": "./src/webparts/slik01/Slik01WebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "bootstrap": {
+      "path": "node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "globalName": "bootstrap"
+    },
+    "jquery": {
+      "path": "node_modules/jquery/dist/jquery.min.js",
+      "globalName": "jQuery"
+    }
+  },
+  "localizedResources": {
+    "FrontWp1WebPartStrings": "lib/webparts/frontWp1/loc/{locale}.js",
+    "Slik01WebPartStrings": "lib/webparts/slik01/loc/{locale}.js"
+  }
+}
